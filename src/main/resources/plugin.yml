@@ -1,0 +1,11 @@
+name: discord-auth
+author: ArkadSt
+version: 1.0
+main: org.arkadst.discordauth.Main
+api-version: 1.16
+depend: [DiscordSRV]
+
+commands:
+  discordauth:
+    description: "discord-auth provided command."
+    permission: discordauth.admin

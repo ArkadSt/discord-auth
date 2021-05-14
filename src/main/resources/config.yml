@@ -1,0 +1,8 @@
+session_time: 30
+extended_session_time: 300
+channel_id: 000000000000000000
+message_id: 000000000000000000
+start_session_emoji: 🔓
+stop_session_emoji: 🔒
+session_stopped_kick_reason: "Your session has been stopped"
+no_active_session_kick_reason: "You have no active session"
