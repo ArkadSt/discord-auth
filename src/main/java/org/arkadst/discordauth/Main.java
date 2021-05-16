@@ -16,7 +16,7 @@ public class Main extends JavaPlugin {
     public static FileConfiguration config;
     public static final HashMap<UUID, Long> sessions_array;
     public static final HashMap<UUID, ExtendedSession> extended_session_array;
-    private DiscordSRVListener discordsrv_listener = new DiscordSRVListener(this);
+    private DiscordSRVListener discordsrv_listener;
 
     static {
         sessions_array = new HashMap<>();
@@ -32,6 +32,7 @@ public class Main extends JavaPlugin {
 
         config = getConfig();
 
+        discordsrv_listener = new DiscordSRVListener(this);
         DiscordSRV.api.subscribe(discordsrv_listener);
         DiscordSRV.api.requireIntent(GatewayIntent.GUILD_MESSAGE_REACTIONS);
         getServer().getPluginManager().registerEvents(new EventListener(this), this);
