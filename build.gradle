@@ -22,10 +22,10 @@ repositories {
 dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
-    compileOnly "com.destroystokyo.paper:paper-api:1.16.5-R0.1-SNAPSHOT"
-    compileOnly 'com.discordsrv:discordsrv:1.22.0'
-    implementation 'net.dv8tion:JDA:4.2.1_253'
-    implementation 'dev.vankka:MCDiscordReserializer:3.0.1'
+    compileOnly "io.papermc.paper:paper-api:1.17-R0.1-SNAPSHOT"
+    compileOnly 'com.discordsrv:discordsrv:1.23.0'
+    implementation 'net.dv8tion:JDA:4.3.0_288'
+    implementation 'dev.vankka:MCDiscordReserializer:4.2.0'
 }
 
 test {
